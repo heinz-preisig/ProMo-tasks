@@ -1,0 +1,13 @@
+39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/TypedTokenEditor.py
+357 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyCreatorGraphCreator.py
+42 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyEquationAssignmentEditor.py
+43 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/ModelComposer.py
+38 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/z_ModelFactory.py
+41 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyEquationEditor.py
+39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyFoundationEditor.py
+50 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/CountLinesInProjectTask.py
+51 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/ModelRenderer.py
+39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/GraphComponentEditor.py
+
+ total number of files : 10
+ total number of lines : 739
