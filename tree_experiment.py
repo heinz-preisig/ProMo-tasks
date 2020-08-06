@@ -5,8 +5,7 @@ root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
 from Common.ontology_container import OntologyContainer
-from OntologyBuilder.OntologyEquationEditor.resources import VarEqTree, DotGraph
-
+from OntologyBuilder.OntologyEquationEditor.resources import DotGraph
 
 if __name__ == '__main__':
   ontology_name = "HAP_playground_02_extend_ontology"

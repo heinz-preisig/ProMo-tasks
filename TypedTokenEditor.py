@@ -23,17 +23,17 @@ __status__ = "beta"
 import os
 import sys
 
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 
 from OntologyBuilder.TypedTokenEditor.editor_typed_token_impl import Ui_TokenEditor
 
 root = os.path.abspath(os.path.join(".."))
-sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root,'tasks')])
+sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 # cwd = os.getcwd()
 # sys.path.append(cwd)
 
 if __name__ == '__main__':
-  a = QtGui.QApplication(sys.argv)
+  a = QtWidgets.QApplication(sys.argv)
   # a.setWindowIcon(QtGui.QIcon("./Common/icons/oe.png"))
   w = Ui_TokenEditor()
   w.show()

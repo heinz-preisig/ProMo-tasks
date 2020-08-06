@@ -13,15 +13,15 @@ Contact: arne.t.elve(at)ntnu.no
 import os
 import sys
 
-from PyQt4 import QtGui
+from PyQt5 import QtGui
+from PyQt5 import QtWidgets
 
 from Common.ontology_container import OntologyContainer
 from TaskBuilder.ModelRenderer.Editor.editor_model_renderer_gui_impl import Ui_ModelFactory
 from TaskBuilder.ModelRenderer.main import ModelRenderer
 
-
 root = os.path.abspath(os.path.join(".."))
-sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root,'tasks')])
+sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 # cwd = os.getcwd()
 # sys.path.append(cwd)
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     mr.generate_output()
 
   else:
-    a = QtGui.QApplication(sys.argv)
+    a = QtWidgets.QApplication(sys.argv)
     a.setWindowIcon(QtGui.QIcon("./Common/icons/modelfactory.png"))
     w = Ui_ModelFactory()
     w.setWindowTitle('Model Renderer')

@@ -11,7 +11,7 @@ import sys
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from PyQt4 import QtGui
+from PyQt5 import QtGui, QtWidgets
 from TaskBuilder.z_ModelFactory.editor_model_factory_gui_impl import Ui_ModelFactory
 from Common.ontology_container import OntologyContainer
 from TaskBuilder.z_ModelFactory.model_integration import ModelFactory
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     mf = ModelFactory(ontology, mod_name, language, model_loc)
     mf.produce_code()
   else:
-    a = QtGui.QApplication(sys.argv)
+    a = QtWidgets.QApplication(sys.argv)
     a.setWindowIcon(QtGui.QIcon("./Common/icons/modelfactory.png"))
     w = Ui_ModelFactory()
     w.setWindowTitle('Model Factory')

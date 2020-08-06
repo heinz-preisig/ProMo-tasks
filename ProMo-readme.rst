@@ -32,7 +32,7 @@ Installation
 
 ProMo has been split into a set of gits for practical reasons.
 
- - ProMo-tasks                      -- all task, mostly editors constructed on PyQt4
+ - ProMo-tasks                      -- all task, mostly editors constructed on PyQt5
  - ProMo-packages-OntologyBuilder   -- the expert's sandbox
  - ProMo-packages-ModelBuilder      -- the translator's sandbox
  - ProMo-packages-ModelBuilder      -- the model builder's sandbox
@@ -53,7 +53,7 @@ corresponding directory tree:
 
 Requirements
 ^^^^^^^^^^^^
- - PyQt4
+ - PyQt5
 
 
 Licence

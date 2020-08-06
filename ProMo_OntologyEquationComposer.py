@@ -23,7 +23,8 @@ __status__ = "beta"
 import os
 import sys
 
-from PyQt4 import QtGui
+from PyQt5 import QtGui
+from PyQt5 import QtWidgets
 
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
@@ -33,7 +34,7 @@ from OntologyBuilder.OntologyEquationEditor.ui_ontology_design_impl import UiOnt
 cwd = os.getcwd()
 sys.path.append(cwd)
 
-a = QtGui.QApplication(sys.argv)
+a = QtWidgets.QApplication(sys.argv)
 icon_f = "task_ontology_equations.svg"
 icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
 a.setWindowIcon(QtGui.QIcon(icon))

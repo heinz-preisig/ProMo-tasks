@@ -26,7 +26,7 @@ sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks
 
 from graphviz import Digraph
 from PyPDF2 import PdfFileMerger
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 
 from Common.common_resources import getData
 from Common.common_resources import getOntologyName
@@ -278,20 +278,20 @@ def seekList(obj, objectlist, parents, lists, first=True):
 #
 if __name__ == '__main__':
 
-  a = QtGui.QApplication([])
+  a = QtWidgets.QApplication([])
 
   ontology_name = getOntologyName()
 
   dot_path = os.path.join(DIRECTORIES["ontology_repository"], ontology_name, DIRECTORIES["ontology_graphs_location"],
                           "%s")
   o_template = dot_path  # + ".gv"
-  o = FILES["ontology_file"]%ontology_name
+  o = FILES["ontology_file"] % ontology_name
 
   ontology = getData(o)["ontology_tree"]
 
   #
   # the tree of networks
-  f = o_template%"tree"
+  f = o_template % "tree"
   print(f)
   graph_attr = {}
   graph_attr["nodesep"] = "1"
@@ -307,7 +307,7 @@ if __name__ == '__main__':
   ontology_hierarchy = walkTreeOnly(ontology, "root", simple_graph)
 
   print(ontology_hierarchy)
-  simple_graph.view()                # generates pdf
+  simple_graph.view()  # generates pdf
   os.remove(f)
 
   #
@@ -316,13 +316,13 @@ if __name__ == '__main__':
   structure_nodes = []
   graph_attr["rankdir"] = "LR"
   edge_attr["tailport"] = "e"
-  edge_attr["headport"] = "w"  #msg_box"
+  edge_attr["headport"] = "w"  # msg_box"
   graph_attr["nodesep"] = "0.4"
   graph_attr["ranksep"] = "0.8"
 
   node = "root"
   n = str(node)
-  f = o_template%n
+  f = o_template % n
   print(f)
   node_graph = Digraph(n, filename=f, graph_attr=graph_attr)
   node_graph.graph_attr = graph_attr
@@ -336,7 +336,7 @@ if __name__ == '__main__':
   for node in tree:
     if node != "root":
       n = str(node)
-      f = o_template%n
+      f = o_template % n
       print(f)
       node_graph = Digraph(n, filename=f, graph_attr=graph_attr)
       ontology_hierarchy = singleNodeOnly(ontology, n, node_graph, behaviour_nodes, structure_nodes)
@@ -346,17 +346,17 @@ if __name__ == '__main__':
   pdf_template = dot_path + ".pdf"
 
   merger = PdfFileMerger()
-  pdf = pdf_template%"tree"
+  pdf = pdf_template % "tree"
   merger.append(open(pdf, 'rb'))
-  pdf = pdf_template%str("root")
+  pdf = pdf_template % str("root")
   merger.append(open(pdf, 'rb'))
   for node in tree:
     if node != "root":
-      pdf = pdf_template%str(node)
+      pdf = pdf_template % str(node)
       merger.append(open(pdf, 'rb'))
-    os.remove(o_template%str(node))
+    os.remove(o_template % str(node))
 
-  o = dot_path%"all_nodes" + ".pdf"
+  o = dot_path % "all_nodes" + ".pdf"
   merger.write(o)
 
   print("file written to :", o)

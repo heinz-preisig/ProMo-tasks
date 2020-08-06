@@ -24,19 +24,19 @@ import os
 import sys
 
 root = os.path.abspath(os.path.join(".."))
-sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root,'tasks')])
+sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from PyQt4 import QtGui
+from PyQt5 import QtGui, QtWidgets
 
 from ModelBuilder.GraphComponentEditor.editor_graphcomponents_gui_impl import EditorGraphComponentsDialogImpl
 
 cwd = os.getcwd()
 sys.path.append(cwd)
 
-a = QtGui.QApplication(sys.argv)
+a = QtWidgets.QApplication(sys.argv)
 icon_f = "task_graphic_objects.svg"
-icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f )
-a.setWindowIcon(QtGui.QIcon(icon) )
+icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
+a.setWindowIcon(QtGui.QIcon(icon))
 
 w = EditorGraphComponentsDialogImpl()
 w.MAIN = a

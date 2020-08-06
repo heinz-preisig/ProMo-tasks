@@ -24,13 +24,13 @@ import sys
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from PyQt4 import QtCore
-from PyQt4 import QtGui
+from PyQt5 import QtCore
+from PyQt5 import QtGui, QtWidgets
 
 from ModelBuilder.ModelComposer.modeller_mainwindow_impl import MainWindowImpl
 
 QtCore.pyqtRemoveInputHook()
-a = QtGui.QApplication(sys.argv)
+a = QtWidgets.QApplication(sys.argv)
 
 icon_f = "task_model_composer.svg"
 icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
