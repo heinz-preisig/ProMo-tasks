@@ -23,10 +23,12 @@ __status__ = "beta"
 import os
 import sys
 
+from PyQt5 import QtGui
+from PyQt5 import QtWidgets
+
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from PyQt5 import QtGui
 
 from ModelBuilder.AutomataEditor.editor_automata_dialog_impl import GraphEditorDialogImpl
 
