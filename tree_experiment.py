@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 
   ontology_container = OntologyContainer(ontology_name)
-  variables = ontology_container.vars
+  variables = ontology_container.variables
   indices = ontology_container.indices
 
   # make_variable_equation_pngs(variables, ontology_name)
