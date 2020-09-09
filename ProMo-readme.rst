@@ -34,8 +34,7 @@ ProMo has been split into a set of gits for practical reasons.
 
  - ProMo-tasks                      -- all task, mostly editors constructed on PyQt5
  - ProMo-packages-OntologyBuilder   -- the expert's sandbox
- - ProMo-packages-ModelBuilder      -- the translator's sandbox
- - ProMo-packages-ModelBuilder      -- the model builder's sandbox
+ - ProMo-packages-ModelBuilder      -- the translator's & the model builder's sandbox
  - ProMo-packages-TaskBuilder       -- the part that builds applications, thus belongs to the model builder's sandbox
  - ProMo-packages-Common            -- utilities that are used by the various editors/tasks
  - ProMo-Model_Repository           -- as it says: the model repository
@@ -58,3 +57,4 @@ Requirements
 
 Licence
 -------
+ - GPL
