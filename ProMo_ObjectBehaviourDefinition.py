@@ -30,7 +30,7 @@ from PyQt5 import QtWidgets
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from OntologyBuilder.OntologyEquationAssignmentEditor.assignEquations_gui_impl import UI_EditorEquationAssignment
+from OntologyBuilder.OntologyEquationAssignmentEditor.assign_equations_gui_impl import UI_EditorEquationAssignment
 
 cwd = os.getcwd()
 sys.path.append(cwd)
