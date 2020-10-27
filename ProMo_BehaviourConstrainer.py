@@ -18,6 +18,8 @@ __version__ = "8.00"
 __email__ = "heinz.preisig@chemeng.ntnu.no"
 __status__ = "beta"
 
+# TODO: implement stdout and stderr output as command-line arguments
+
 import os
 import sys
 
@@ -32,14 +34,12 @@ from OntologyBuilder.ConstrainBehaviour.ui_constrain_behaviour import MainWindow
 QtCore.pyqtRemoveInputHook()
 a = QtWidgets.QApplication(sys.argv)
 
-# icon_f = "task_model_composer.svg"
-icon = os.path.join(os.path.abspath("../packages/Common/icons")) #, icon_f)
-
+icon_name = "task_bi_partite_constrainer"
+icon_file = icon_name+".svg"
+icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_file)
 a.setWindowIcon(QtGui.QIcon(icon))
-
-# TODO: implement stdout and stderr output as command-line arguments
-
-w = MainWindowImpl()
+w = MainWindowImpl(icon_name)
+w.setWindowTitle("Constraining variable/equation bipartite graph")
 
 w.show()
 a.exec()
