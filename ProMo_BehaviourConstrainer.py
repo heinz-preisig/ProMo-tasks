@@ -31,7 +31,7 @@ from PyQt5 import QtGui, QtWidgets
 
 from OntologyBuilder.ConstrainBehaviour.ui_constrain_behaviour import MainWindowImpl
 
-QtCore.pyqtRemoveInputHook()
+# QtCore.pyqtRemoveInputHook()
 a = QtWidgets.QApplication(sys.argv)
 
 icon_name = "task_bi_partite_constrainer"
