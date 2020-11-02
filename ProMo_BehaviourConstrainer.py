@@ -29,7 +29,7 @@ sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks
 from PyQt5 import QtCore
 from PyQt5 import QtGui, QtWidgets
 
-from OntologyBuilder.ConstrainBehaviour.ui_constrain_behaviour import MainWindowImpl
+from OntologyBuilder.ConstrainBehaviour.ui_constrain_behaviour_impl import MainWindowImpl
 
 # QtCore.pyqtRemoveInputHook()
 a = QtWidgets.QApplication(sys.argv)
