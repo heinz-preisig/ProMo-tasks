@@ -24,7 +24,7 @@ import sys
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
 
-from PyQt5 import QtGui, QtWidgets
+from PyQt5 import QtGui, QtWidgets, QtCore
 
 from OntologyBuilder.OntologyFoundationEditor.editor_foundation_ontology_gui_impl import UI_EditorFoundationOntology
 
@@ -35,5 +35,6 @@ a.setWindowIcon(QtGui.QIcon(icon))
 
 w = UI_EditorFoundationOntology()
 w.MAIN = a
+w.move(QtCore.QPoint(100, 100))
 w.show()
 a.exec_()

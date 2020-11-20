@@ -41,5 +41,7 @@ a.setWindowIcon(QtGui.QIcon(icon))
 
 w = MainWindowImpl()
 
+w.move(QtCore.QPoint(100, 100))
+
 w.show()
 a.exec()

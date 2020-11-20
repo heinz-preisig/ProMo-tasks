@@ -23,10 +23,12 @@ __status__ = "beta"
 import os
 import sys
 
+from PyQt5 import QtCore
+from PyQt5 import QtGui
+from PyQt5 import QtWidgets
+
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
-
-from PyQt5 import QtGui, QtWidgets
 
 from ModelBuilder.GraphComponentEditor.editor_graphcomponents_gui_impl import EditorGraphComponentsDialogImpl
 
@@ -40,5 +42,6 @@ a.setWindowIcon(QtGui.QIcon(icon))
 
 w = EditorGraphComponentsDialogImpl()
 w.MAIN = a
+w.move(QtCore.QPoint(100, 100))
 w.show()
 a.exec_()

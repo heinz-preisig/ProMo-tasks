@@ -41,6 +41,7 @@ icon_file = icon_name+".svg"
 icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_file)
 a.setWindowIcon(QtGui.QIcon(icon))
 w = MainWindowImpl(icon_name)
+w.move(QtCore.QPoint(100, 100))
 w.setWindowTitle("Constraining variable/equation bipartite graph")
 
 w.show()

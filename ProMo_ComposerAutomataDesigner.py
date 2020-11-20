@@ -23,7 +23,7 @@ __status__ = "beta"
 import os
 import sys
 
-from PyQt5 import QtGui
+from PyQt5 import QtGui, QtCore
 from PyQt5 import QtWidgets
 
 root = os.path.abspath(os.path.join(".."))
@@ -39,5 +39,6 @@ icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
 a.setWindowIcon(QtGui.QIcon(icon))
 
 w = GraphEditorDialogImpl()
+w.move(QtCore.QPoint(100, 100))
 w.show()
 a.exec_()
