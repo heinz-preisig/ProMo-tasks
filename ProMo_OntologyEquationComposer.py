@@ -23,6 +23,7 @@ __status__ = "beta"
 import os
 import sys
 
+from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 
@@ -39,6 +40,7 @@ icon_f = "task_ontology_equations.svg"
 icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
 a.setWindowIcon(QtGui.QIcon(icon))
 w = UiOntologyDesign()
+w.move(QtCore.QPoint(100, 100))
 w.show()
 r = a.exec_()
 sys.exit(r)

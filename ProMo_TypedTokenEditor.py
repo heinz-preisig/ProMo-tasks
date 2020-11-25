@@ -23,19 +23,22 @@ __status__ = "beta"
 import os
 import sys
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui, QtCore
 
 from OntologyBuilder.TypedTokenEditor.editor_typed_token_impl import Ui_TokenEditor
 
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
-# cwd = os.getcwd()
-# sys.path.append(cwd)
 
-if __name__ == '__main__':
-  a = QtWidgets.QApplication(sys.argv)
-  # a.setWindowIcon(QtGui.QIcon("./Common/icons/oe.png"))
-  w = Ui_TokenEditor()
-  w.show()
-  r = a.exec_()
-  sys.exit(r)
+cwd = os.getcwd()
+sys.path.append(cwd)
+
+a = QtWidgets.QApplication(sys.argv)
+icon_f = "task_token_conversion.svg"
+icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
+a.setWindowIcon(QtGui.QIcon(icon))
+w = Ui_TokenEditor()
+w.move(QtCore.QPoint(100, 100))
+w.show()
+r = a.exec_()
+sys.exit(r)
