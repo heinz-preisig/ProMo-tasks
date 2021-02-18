@@ -25,10 +25,11 @@ import sys
 
 from PyQt5 import QtWidgets, QtGui, QtCore
 
-from OntologyBuilder.TypedTokenEditor.editor_typed_token_impl import Ui_TokenEditor
-
 root = os.path.abspath(os.path.join(".."))
 sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks')])
+
+
+from OntologyBuilder.TypedTokenEditor.editor_typed_token_impl import Ui_TokenEditor
 
 cwd = os.getcwd()
 sys.path.append(cwd)
