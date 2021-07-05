@@ -31,7 +31,8 @@ sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks
 from PyQt5 import QtCore
 from PyQt5 import QtGui, QtWidgets
 
-from OntologyBuilder.BehaviourEditor.ui_behaviour_linker_editor_impl import MainWindowImpl
+# from OntologyBuilder.BehaviourEditor.ui_behaviour_linker_editor_impl import MainWindowImpl
+from OntologyBuilder.BehaviourAssociation.ui_behaviour_linker_editor_impl import MainWindowImpl
 
 # QtCore.pyqtRemoveInputHook()
 a = QtWidgets.QApplication(sys.argv)

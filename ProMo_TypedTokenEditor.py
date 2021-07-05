@@ -31,13 +31,11 @@ sys.path.extend([root, os.path.join(root, 'packages'), os.path.join(root, 'tasks
 
 from OntologyBuilder.TypedTokenEditor.editor_typed_token_impl import Ui_TokenEditor
 
-cwd = os.getcwd()
-sys.path.append(cwd)
-
 a = QtWidgets.QApplication(sys.argv)
-icon_f = "task_token_conversion.svg"
+icon_f = "task_typed_tokens.svg" #"task_token_conversion.svg"
 icon = os.path.join(os.path.abspath("../packages/Common/icons"), icon_f)
 a.setWindowIcon(QtGui.QIcon(icon))
+
 w = Ui_TokenEditor()
 w.move(QtCore.QPoint(100, 100))
 w.show()
