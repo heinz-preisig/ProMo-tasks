@@ -38,7 +38,7 @@ if __name__ == '__main__':
     language = 'python'
 
     ontology = OntologyContainer(ontology_name)
-    ontology_location = ontology.onto_path
+    ontology_location = ontology.ontology_location
     # model_loc = '{}/models/{}'.format(ontology_location, mod_name)
     mr = ModelRenderer(ontology, mod_name, case_name)
     mr.setup_system(language)

@@ -26,7 +26,7 @@ if __name__ == '__main__':
   if mode == 'development ModelFactory':
     ontology_name = 'Ball_02'
     ontology = OntologyContainer(ontology_name)
-    ontology_location = ontology.onto_path
+    ontology_location = ontology.ontology_location
     mod_name = 'ball_fall'
     language = 'python'
     model_loc = '{}/models/{}'.format(ontology_location, mod_name)
