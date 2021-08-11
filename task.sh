@@ -23,6 +23,17 @@ label=( "foundation: ${programs[0]}"
 )
 
 
+case $1 in
+
+  "help")
+    bash show_doc.sh ;
+    exit ;;
+  
+  *)
+    echo "no such program -- exit" ;
+    exit ;;
+esac ;
+
 
 echo "" ;
 echo "ProMo tools" ;
@@ -69,6 +80,10 @@ case $prog in
   
   "modeller")
   prog=5 ;;
+  
+  "help")
+  bash show_doc.sh ;
+  exit ;;
   
   *)
   valid=0 ;;
