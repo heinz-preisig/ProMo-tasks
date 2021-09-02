@@ -29,9 +29,9 @@ case $1 in
     bash show_doc.sh ;
     exit ;;
   
-  *)
-    echo "no such program -- exit" ;
-    exit ;;
+  #*)
+  #  echo "no such program -- exit" ;
+  #  exit ;;
 esac ;
 
 
