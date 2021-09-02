@@ -22,13 +22,21 @@ label=( "foundation: ${programs[0]}"
         "modeller:   ${programs[6]}"
 )
 
+label=( "foundation"
+        "equations"
+        "components"
+        "linker"
+        "automaton"
+        "typedtoken"
+        "modeller"
+)
 
 echo "" ;
 echo "ProMo tools brief documentation" ;
 echo "===============================" ;
 echo "" 
-echo "what program ?";
-echo "  -- choose from:" ;
+echo "Get information on what program ?";
+
 for prog in "${label[@]}"; do
   echo "-    $prog" ;
 done 
@@ -58,7 +66,7 @@ case $prog in
   prog=5 ;; 
   
   "modeller")
-  prog=5 ;;
+  prog=6 ;;
   
   *)
   valid=0 ;;
@@ -71,7 +79,7 @@ case $valid in
   exit ;;
   
   1)
-    echo "start program" "${programs[$prog]}"  ;
+    #echo "start program" "${programs[$prog]}"  ;
     $1 "${programs[$prog]}.pdf" ;;
 esac
 

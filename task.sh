@@ -14,13 +14,13 @@ ProMo_TypedTokenEditor.py               #5
 ProMo_ModelComposer.py                  #6
 )
 
-label=( "foundation: ${programs[0]}"
-        "equations:  ${programs[1]}"
-        "components: ${programs[2]}"
-        "linker:     ${programs[3]}"
-        "automaton:  ${programs[4]}"
-        "typedtoken: ${programs[5]}"
-        "modeller:   ${programs[6]}"
+label=( "foundation" #: ${programs[0]}"
+        "equations"  #:  ${programs[1]}"
+        "components" #: ${programs[2]}"
+        "linker"     #:     ${programs[3]}"
+        "automaton"  #:  ${programs[4]}"
+        "typedtoken" #: ${programs[5]}"
+        "modeller"   #:   ${programs[6]}"
 )
 
 
@@ -46,7 +46,7 @@ arg=0
 if [ $# -eq 0 ] ;
   then
     echo "  what program?" ;
-    echo "invalid entry: $1  -- choose from:" ;
+    #echo "invalid entry: $1  -- choose from:" ;
     for prog in "${label[@]}"; do
       echo "-    $prog" ;
     done 
