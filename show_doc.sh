@@ -72,7 +72,7 @@ case $valid in
   
   1)
     echo "start program" "${programs[$prog]}"  ;
-    okular "${programs[$prog]}.pdf" ;;
+    $1 "${programs[$prog]}.pdf" ;;
 esac
 
 

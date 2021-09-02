@@ -1,6 +1,7 @@
 #!/bin/bash
 
 prog=$1 ;
+pdfreader=evince
 
 
 programs=(
@@ -26,7 +27,7 @@ label=( "foundation: ${programs[0]}"
 case $1 in
 
   "help")
-    bash show_doc.sh ;
+    bash show_doc.sh $pdfreader;
     exit ;;
   
   #*)
