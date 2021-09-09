@@ -13,15 +13,6 @@ info_modeller_editor                #6
 )
 
 
-label=( "foundation: ${programs[0]}"
-        "equations:  ${programs[1]}"
-        "components: ${programs[2]}"
-        "linker:     ${programs[3]}"
-        "automaton:  ${programs[4]}"
-        "typedtoken: ${programs[5]}"
-        "modeller:   ${programs[6]}"
-)
-
 label=( "foundation"
         "equations"
         "components"

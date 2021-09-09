@@ -14,13 +14,13 @@ ProMo_TypedTokenEditor.py               #5
 ProMo_ModelComposer.py                  #6
 )
 
-label=( "foundation" #: ${programs[0]}"
-        "equations"  #:  ${programs[1]}"
-        "components" #: ${programs[2]}"
-        "linker"     #:     ${programs[3]}"
-        "automaton"  #:  ${programs[4]}"
-        "typedtoken" #: ${programs[5]}"
-        "modeller"   #:   ${programs[6]}"
+label=( "foundation" 
+        "equations"  
+        "components" 
+        "linker"     
+        "automaton"  
+        "typedtoken" 
+        "modeller"   
 )
 
 
@@ -40,7 +40,6 @@ echo "" ;
 echo "ProMo tools" ;
 echo "===========" ;
 echo "" 
-echo "what program ?";
 arg=0
 
 if [ $# -eq 0 ] ;
@@ -50,6 +49,7 @@ if [ $# -eq 0 ] ;
     for prog in "${label[@]}"; do
       echo "-    $prog" ;
     done 
+    echo   "or help";
     read prog ;
   else
     arg=1
@@ -80,10 +80,10 @@ case $prog in
   prog=5 ;; 
   
   "modeller")
-  prog=5 ;;
+  prog=6 ;;
   
   "help")
-  bash show_doc.sh ;
+  bash show_doc.sh  $pdfreader;
   exit ;;
   
   *)
@@ -100,7 +100,8 @@ case $valid in
           echo "-    $prog" ;
         done ;
       else
-      echo "try again with ./task.py <task>"
+        #echo "try again with ./task.py <task>   or ./tasks.py help"
+        echo "try again with adding help"
     fi ;;
   1)
     echo "start program" "${programs[$prog]}"  ;
