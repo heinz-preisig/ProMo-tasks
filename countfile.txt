@@ -1,13 +1,18 @@
-39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/TypedTokenEditor.py
-357 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyCreatorGraphCreator.py
-42 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyEquationAssignmentEditor.py
-43 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/ModelComposer.py
-38 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/z_ModelFactory.py
-41 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyEquationEditor.py
-39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/OntologyFoundationEditor.py
-50 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/CountLinesInProjectTask.py
-51 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/ModelRenderer.py
-39 	 /home/heinz/1_Gits/ProcessModeller/ProcessModeller_v7_04/tasks/GraphComponentEditor.py
+22 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/tree_experiment.py
+54 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_ModelRenderer.py
+45 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_ObjectBehaviourDefinition.py
+362 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_OntologyDotGraphCreator.py
+50 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/CountLinesInProjectTask.py
+47 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_ComposerGraphComponentDesigner.py
+46 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_OntologyEquationComposer.py
+40 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_OntologyFoundationDesigner.py
+22 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/__init__.py
+47 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_ModelComposer.py
+49 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_BehaviourLinker.py
+42 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/z_ModelFactory.py
+43 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_TypedTokenEditor.py
+44 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/ProMo_ComposerAutomataDesigner.py
+40 	 /home/heinz/1_Gits/CAM-projects_v8_removed_tokens/ProMo/tasks/z_Initialise_system_editor.py
 
- total number of files : 10
- total number of lines : 739
+ total number of files : 15
+ total number of lines : 953

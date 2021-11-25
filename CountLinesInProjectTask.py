@@ -29,13 +29,14 @@ if __name__ == '__main__':
   root = os.getcwd()
 
   py_files = []
-  with open('countfile.txt', 'w') as out:
+  txt_file = 'countfile.txt'
+  with open(txt_file, 'w') as out:
     for (dirpath, dirnames, filenames) in os.walk(root):
       for file_name in filenames:
         if ".py" in file_name:
           if not(".pyc" in file_name):
             next_name = os.path.join(dirpath,file_name)
-            print(next_name)
+            # print(next_name)
             py_files.append(next_name)
 
     for file_name in py_files:
@@ -45,6 +46,6 @@ if __name__ == '__main__':
         line_counter += count
         out.write('{c} \t {f}\n'.format(c=count, f=file_name))
 
-    out.write("\n total number of files : %s" % file_counter)
-    out.write("\n total number of lines : %s" % line_counter)
 
+  print("\n total number of files : %s" % file_counter)
+  print("\n total number of lines : %s" % line_counter)
